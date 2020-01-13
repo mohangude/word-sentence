@@ -1,0 +1,21 @@
+public int wordSearch(String sentence, String word){
+  int count = 0;
+  for(int i=0; i<=s.length()-w.length(); i++){
+    if(sentence.substring(i, i+word.length()).equals(word)){
+      if(i==0){
+        if(sentence.substring(i+word.length; i+word.length+1).equals(" ")){
+          count++;
+        }
+      } else if(i==0){
+          if(sentence.substring(i-1, i).equals(" ")){
+            count++;
+          }
+      } else {
+          if(sentence.substring(i+word.length; i+word.length+1).equals(" ") && sentence.substring(i-1, i).equals(" ")){
+            count++;
+          }
+      }
+    }
+  }
+  return count;
+}

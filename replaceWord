@@ -1,0 +1,11 @@
+public String replaceWord(String sentence, String word, String replacement){
+  String out = "";
+  for(int i=0; i<=sentence.length(); i++){
+    if(sentence.substring(i,i+replacement.length()).equals(replacement)){
+      String firstPart = sentence.substring(0, i);
+      String secondPart = sentence.substring(i+replacement.length(), sentence.length());
+      out = firstPart + word + secondPart;
+    }
+  }
+  return out;
+}

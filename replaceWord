@@ -5,6 +5,8 @@ public String replaceWord(String sentence, String word, String replacement){
       String firstPart = sentence.substring(0, i);
       String secondPart = sentence.substring(i+replacement.length(), sentence.length());
       out = firstPart + word + secondPart;
+      sentence = out;
+      i = i + word.length();
     }
   }
   return out;
